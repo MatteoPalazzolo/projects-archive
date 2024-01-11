@@ -1,0 +1,32 @@
+{
+  "SCREEN_SIZE": [
+    413,
+    550
+  ],
+  "COLLISION_DEBUG": false,
+  "PLAYER": {
+    "SPEED": 150,
+    "SPRITE": "./assets/images/bowl.png"
+  },
+  "FOOD": {
+    "SPEED": 50,
+    "SPRITE_DIR": "./assets/images/food/{}.png",
+    "TYPES": [
+      {
+        "NAME": "chicken",
+        "SPEED": 1,
+        "SCALE": 0.05
+      },
+      {
+        "NAME": "apple",
+        "SPEED": 1.5,
+        "SCALE": 0.10
+      },
+      {
+        "NAME": "hand",
+        "SPEED": 0.8,
+        "SCALE": 0.05
+      }
+    ]
+  }
+}

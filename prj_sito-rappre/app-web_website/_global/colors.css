@@ -1,0 +1,53 @@
+:root {
+    --black: #212529;
+    --white: #E7E6E2;
+    --pink: #DB2781;
+    --gray: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.text-block {
+    color: var(--black);
+}
+
+.bg-block {
+    background-color: var(--black);
+}
+
+
+.text-whyte {
+    color: var(--white);
+}
+
+.bg-whyte {
+    background-color: var(--white);
+}
+
+
+.text-ponk {
+    color: var(--pink);
+}
+
+.bg-ponk {
+    background-color: var(--pink);
+}
+
+
+.text-gary {
+    color: var(--gray);
+}
+
+.bg-gary {
+    background-color: var(--gray);
+}
+
+
+.fl-ponk::first-letter {
+    color: var(--pink);
+}

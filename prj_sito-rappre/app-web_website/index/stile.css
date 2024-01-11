@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
+
+html, body, .container { height: 100%; }
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	--y-offset: 0px;
+}
+
+.symbol {
+	color: var(--white);
+	text-decoration: none;
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	
+	transform: translateY(var(--y-offset)) scale(var(--symbol-scale));
+	transition: transform .1s linear;
+
+	height: min-content;
+	margin-bottom: 80px;
+}
+
+.symbol:hover {
+	--y-offset: 20px;
+	--symbol-scale: 1.06;
+	--text-scale: 1.06;
+}
+
+.symbol svg {
+	height: 12rem;
+
+}
+
+.symbol .title {
+	margin-top: 20px;
+
+	text-decoration: dashed;
+	
+	text-align: center;
+	font-family: 'Noto Sans Display', sans-serif;
+	font-size: xx-large;
+
+	transform: scale(var(--text-scale));
+	transition: transform .1s linear;
+}
+
+@media screen and (max-width: 999px) {
+		
+	.container {
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 100%;
+	}
+
+	.symbol {
+		margin-bottom: 0;
+	}
+
+	.symbol svg {
+		height: 120px;
+	}
+
+	.symbol .title {
+		font-size: x-large;
+	}
+
+	.symbol:hover {
+		transform: scale(1.06);
+	}
+
+	
+}
