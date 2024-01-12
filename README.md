@@ -11,3 +11,5 @@
 
 ## Progetti artistici
 - [synesthesia.blend](prj_synesthesia/README.md)
+- [posters.psd](prj_posters/README.md)
+- [death-suggestion.txt](prj_death-suggestion/README.md)

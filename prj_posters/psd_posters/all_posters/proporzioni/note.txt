@@ -1,0 +1,10 @@
+proporzione
+mm x 0.67 = px
+
+hMonitor = 325 mm
+A4 = 210 mm × 297 mm
+A3 = 297 mm × 420 mm
+
+hMonitor = 219px
+A4 = 142 px × 200 px
+A3 = 200 px × 283 px
