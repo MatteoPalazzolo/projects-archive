@@ -1,4 +1,5 @@
 ## Intro
+- data: 4 Apr 2021
 - da solo in 3° liceo (A.S. 2020/2021)
 - app web vanilla
 - utilizza procedural-gui.js

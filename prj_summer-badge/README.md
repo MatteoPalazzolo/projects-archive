@@ -1,4 +1,5 @@
 ## Intro
+- data: 20 Giugno 2021
 - fatto con Domenico Giubellini in 3° liceo (A.S. 2020/2021)
 - proposto dal prof di informatica per gestire le entrate e le uscite degli alunni nel centro estivo dell'Aldo Moro nel estate del 2020
 
