@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    
+    <!-- general -->
+    <link rel="stylesheet" href="procedural-gui\general.css">
+    <script src="procedural-gui\general.js"></script>
+    <!-- tab-menu -->
+    <link rel="stylesheet" href="procedural-gui\tab-menu\tab-menu.css">
+    <script src="procedural-gui\tab-menu\tab-menu.js"></script>
+    <!-- dropdown-menu -->
+    <link rel="stylesheet" href="procedural-gui\dropdown-menu\dropdown.css">
+    <script src="procedural-gui\dropdown-menu\dropdown.js"></script>
+    <!-- slider -->
+    <link rel="stylesheet" href="procedural-gui/slider/slider.css">
+    <script src="procedural-gui/slider/slider.js"></script>
+    <!-- checkbox -->
+    <link rel="stylesheet" href="procedural-gui\checkbox\checkbox.css">
+    <script src="procedural-gui\checkbox\checkbox.js"></script>
+    <!-- spinner -->
+    <link rel="stylesheet" href="procedural-gui\spinner\spinner.css">
+    <script src="procedural-gui\spinner\spinner.js"></script>
+    <!-- box-spinner -->
+    <link rel="stylesheet" href="procedural-gui\box-spinner\box-spinner.css">
+    <script src="procedural-gui\box-spinner\box-spinner.js"></script>
+
+    <style>
+    * { margin: 0; padding: 0; }
+    body { background-color: #fff; }    
+    </style>
+</head>
+<body>
+
+    <section class="GUI">
+
+        <!-- NEW -->
+        <div class="tab-menu">
+            <div class="tabs">
+                <div class="item"> <p>inspector</p> </div>
+                <div class="item"> <p>simulation</p> </div>
+            </div>
+            <div class="close-bkg">
+                <svg class="close" viewBox="0 0 365.696 365.696" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/>
+                </svg>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- NEW -->
+
+        <div class="tab-content">
+            <div class="dropdown">
+                <div class="header">
+                    <p>tab name</p>
+                    <svg class="arrow" viewBox="0 0 16 16">
+                        <polygon points="1,0 1,16 15,8"/>
+                    </svg>
+                </div>
+                <div class="content">
+        
+                    <div class="field slider" data-min="1" data-max="20" data-value="1" data-label="name">
+                        <span class="label">slider</span>
+                        <div>
+                            <input type="range" min="1" max="20" value="1">
+                            <input type="text" value="1">
+                        </div>
+                    </div>
+                    
+                    <div class="field slider" data-min="0" data-max="100" data-value="50" data-label="name">
+                        <span class="label">slider</span>
+                        <div>
+                            <input type="range" min="0" max="100" value="50">
+                            <input type="text" value="50">
+                        </div>
+                    </div>
+
+                    <div class="field checkbox" data-value="true" data-label="name">
+                        <span class="label">checkbox</span>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="field spinner" data-value="uno due tre" data-label="name">
+                        <span class="label">spinner</span>
+                        <div class="spin">
+                            <div class="header">
+                                <p>uno</p>
+                                <svg class="arrow" viewBox="0 0 16 16">
+                                    <polygon points="1,0 1,16 15,8"/>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <div class="list">
+                                    <p>cangurolaser</p>
+                                    <p>due</p>
+                                    <p>tre</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="field box-spinner" data-label="name">
+                        <span class="label">box-spinner</span>
+                        <div class="line"></div>
+                        <div class="content">
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                        </div>
+                    </div>
+
+                    <div class="field box-spinner" data-label="name">
+                        <span class="label">box-spinner</span>
+                        <div class="line"></div>
+                        <div class="content">
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                            <div class="card" type="sand"><img src="assets\sand-icon.jpg" alt="sand"></div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

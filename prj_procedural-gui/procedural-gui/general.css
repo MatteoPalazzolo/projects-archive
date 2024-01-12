@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.GUI * {font-family: 'Roboto', sans-serif;}
+
+.GUI { 
+    min-width: 240px;
+    max-width: 500px;
+    resize: horizontal; 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    height: 600px; 
+    background-color: #aaa;
+}
+
+.GUI .label {    
+    user-select: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.GUI .field {
+    padding: 2px 8px;
+    margin: 2px 0;
+    background-color: #999;
+    box-shadow: 1px 1px 2px #6d6d6d;
+}
+
+.GUI, .GUI */*scrollbar*/ {
+    scrollbar-color: #666 #ccc;
+    scrollbar-width: thin;
+}
+
+.GUI::-webkit-scrollbar, .GUI *::-webkit-scrollbar {
+    width: 10px;
+}
+
+.GUI::-webkit-scrollbar-track, .GUI *::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+.GUI::-webkit-scrollbar-thumb, .GUI *::-webkit-scrollbar-thumb {
+    padding: 0 1px;
+    background-color: #666;
+}

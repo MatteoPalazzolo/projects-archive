@@ -1,0 +1,81 @@
+input[type=range] {
+    --diameter: 18px;
+    --border-color: #444;
+    --shadow: inset -2px -2px 5px #ddd;
+
+    height: 6px;
+    width: 250px;
+    margin: 12px 5px;
+    margin-left: 0;
+
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background-color: #888;
+    border: solid 2px var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+input:focus {
+    /*outline: solid #333 2px;*/
+    outline: none;
+}
+
+/*********** Firefox ***********/
+input[type=range]::-moz-range-thumb {
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 200px;
+
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/*********** Chrome ***********/
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 200px;
+
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    
+    background: #ccc; /*//*/
+    cursor: pointer;
+}
+
+/*********** slider ***********/
+.slider {
+    padding: 2px 8px;
+    margin: 4px 0;
+    box-shadow: 1px 1px 2px #6d6d6d;
+}
+
+.slider div {
+    display: flex;
+    align-self: center;
+}
+
+.slider input[type=text] {
+    min-width: 30px;
+    height: min-content;
+    margin: auto 1px;
+    padding: 1px 2px;
+    font-size: 1.1rem;
+    text-align: center;
+
+    border: #333 solid 2px;
+    background-color: #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: inset -2px -2px 5px #fff;
+}
+
+.slider .label {
+    padding-left: 2px;
+    position: relative;
+    top: 5px;
+}
