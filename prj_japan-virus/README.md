@@ -5,7 +5,3 @@
 ## Idea
 - creare un programma che simulasse il comportamento di un virus facendo apparire molte finestre come popup
 - on top of that abbiamo deciso di rievocare un'atmosfera di un giardino zen giapponese attraveso la musica e un uso di immagini che avevano una palette gioiosa e naturale con toni prevalentemente gialli e verdi
-
-## TODO
-- cambiare libreria per la riproduzione di suoni -> questa è molto poco compatibile con altri pc
-- scrivere un requirements.txt
