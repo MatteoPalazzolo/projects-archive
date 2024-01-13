@@ -1,0 +1,6 @@
+1354CN:Stazione di Cuneo 
+4873GE:Stazione di Genova 
+6468SA:Stazione di Savona
+5873MI:Stazione di Milano
+7684TO:Stazione di Torino
+LORENZ:Si lore, puoi giocare

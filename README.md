@@ -8,6 +8,7 @@
 - [sito-rappre.html](prj_sito-rappre/README.md)
 - [particle-engine.html](prj_particle-engine/README.md)
 - [procedural-gui.js](prj_procedural-gui/README.md)
+- [train-speaker.c.cpp](prj_train-speaker/README.md)
 
 ## Progetti artistici
 - [synesthesia.blend](prj_synesthesia/README.md)
