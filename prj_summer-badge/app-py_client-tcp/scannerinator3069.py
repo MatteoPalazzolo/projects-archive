@@ -1,7 +1,8 @@
 ######## IMPORT ########
+import json
 import tkinter as tk
 from tkinter import messagebox
-import cv2, os
+import PIL, cv2, os
 from PIL import Image, ImageTk
 from pyzbar.pyzbar import decode
 import scanner_tools as tools
@@ -9,9 +10,9 @@ from threading import Thread
 import pyautogui
 
 ######## CONSTANTS ########
-SCANNER_CAM = 0
-PHOTO_CAM = 0
-DEBUG_MODE, TEST_ID = True, "#0289giovbisc"
+SCANNER_CAM = 1
+PHOTO_CAM = 1
+DEBUG_MODE, TEST_ID = False, "#8817marcbrac"
 
 ######## GLOBAL ########
 qr_id = ""
@@ -78,7 +79,7 @@ def scannerQR():
         
         cv2image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
     
-        img = Image.fromarray(cv2image)
+        img = PIL.Image.fromarray(cv2image)
         imgtk = ImageTk.PhotoImage(image=img)
         tk_scanner.imgtk = imgtk
         tk_scanner.configure(image=imgtk)
@@ -112,7 +113,6 @@ def user_not_found_window():
 #foto
 def photo_window(name:str, surname:str, classroom:str, entring:bool):
     window = get_window((1200,900))
-    no_image = len(user_info['image']) < 10
 
     def photo():
         _, frame = cap.read()
@@ -131,7 +131,7 @@ def photo_window(name:str, surname:str, classroom:str, entring:bool):
         frame = cv2.flip(frame, 1)
         
         cv2image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
-        img = Image.fromarray(cv2image)
+        img = PIL.Image.fromarray(cv2image)
         imgtk = ImageTk.PhotoImage(image=img)
         tk_scanner.imgtk = imgtk
         tk_scanner.configure(image=imgtk)
@@ -144,7 +144,7 @@ def photo_window(name:str, surname:str, classroom:str, entring:bool):
     
     Frameb = tk.Frame(window).grid(columnspan=2, row=6)
 
-    if no_image:
+    if len(user_info['image']) < 10:
         Button1 = tk.Button(window, text="non accettare", command=lambda:[set_window_pos(window),window.destroy(),cap.release(),homepage()])
         Button1.config(width=20)
         Button1.grid(Frameb, columnspan=2, row=6, ipady=20, pady=10,  )
@@ -182,7 +182,7 @@ def photo_window(name:str, surname:str, classroom:str, entring:bool):
     Classroom.config(font=("Courier", 20), relief='solid', borderwidth=1, width=15)
     Classroom.grid(column=0, row=3, padx=20)
     
-    if no_image:
+    if len(user_info['image']) < 10:
         cap = cv2.VideoCapture(PHOTO_CAM)
         cap.set(3, 5)
         cap.set(4, 5)
@@ -223,11 +223,10 @@ def image_save_window():
     window.mainloop()
 
 def save_image():
-    image = Image.open(tools.IMAGE_NAME)
-    image = tools.manage_image(image)
-    data = tools.image_to_bytes(image)
-        
-    tools.save_image(qr_id, data)
+    with open(tools.IMAGE_NAME,"rb") as img:
+        data = img.read()
+    #print("image data:",data)
+    tools.save_image(qr_id,data)
     os.remove(tools.IMAGE_NAME)
 
     if user_info['entring']:

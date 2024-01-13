@@ -12,7 +12,3 @@ articolato in 3 parti:
 - un server TCP scritto in python
 - un client TCP con interfaccia grafica (Tkinter) fatto interamente in python
 - un tool per inviare le mail a tutti gli studenti con il proprio QR code
-
-## Problemi
-- si tratta di un progetto abbastanza confusionario
-- per il momento non è utilizzabile per buona parte a causa della mancanza dello schema del DB di MySQL
