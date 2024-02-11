@@ -1,0 +1,6 @@
+considera solo gli errori di NULL, non tutti
+logga gli errori diversi da NULL
+
+confronta il tuo algoritmo con quello ciulato
+usa la tua query in quello ciulato
+capisci come funzionano i decoratori

