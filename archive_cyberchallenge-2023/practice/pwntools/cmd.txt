@@ -1,0 +1,16 @@
+objdump -d ./retuwin
+python3 -c 'print(hex(56))' | ./retuwin
+cyclic 32
+dmesg
+checksec ./retuwin
+
+--------------------------------------------
+
+ltrace ./scode
+strace ./scode
+
+--------------------------------------------
+
+ldd ./sw-02 	# elenca le librerie
+pwndbg> print/d $rax     # stampa il contenuto di $rax come intero con segno # x | f | d | u
+x/nfu addr   # Olicyber Software-14; Dynamic-7

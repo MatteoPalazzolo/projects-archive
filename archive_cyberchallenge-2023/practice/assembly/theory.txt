@@ -1,0 +1,3 @@
+https://www.vikaskumar.org/2006/07/09/amd64-calling-conventions.html
+
+RDI, RSI, RDX, R10, R8, R9

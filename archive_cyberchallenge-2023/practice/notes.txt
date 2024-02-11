@@ -1,0 +1,18 @@
+BINARY
+ltrace -> comando per riconoscere le librerie esterne di un eseguibile
+strace -> comando per riconoscere le syscall di un eseguibile
+ghidra -> ispezione codice compilato
+gdb -> debugger || gef
+
+
+WEB
+git dump
+curl || wget
+/etc/passwd || /etc/hostname
+nullbyte
+/proc/
+chroot
+AWS http://169.254.169.254/
+nmap
+dnsbin
+$(comando)
