@@ -9,3 +9,5 @@ https://matteopalazzolo.altervista.org/portfolio/simulation/
 
 ## Problemi
 - molti
+
+![](./screenshots/00.mp4)
