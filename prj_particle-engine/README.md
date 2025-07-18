@@ -7,7 +7,8 @@ https://matteopalazzolo.altervista.org/portfolio/simulation/
 - app web vanilla
 - utilizza procedural-gui.js, un tentativo abbastanza atroce di creare una GUI procedurale usando solo JS in un'app web vanilla. (all'epoca non avevo idea di cosa fosse php, un framework o una richiesta GET)
 
-## Problemi
-- molti
+---
 
-![](./screenshots/00.mp4)
+![](./screenshots/00.gif)
+
+[full video](./screenshots/00.mp4)
