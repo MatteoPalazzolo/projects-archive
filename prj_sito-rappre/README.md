@@ -9,3 +9,6 @@ https://matteopalazzolo.altervista.org/portfolio/sito_rappre/
 ## Idea
 - creare molti biglietti contenenti un QR code con cui poter tappezzare la scuola
 - scannerizzando il QR code si veniva condotti sul sito in questione, creato in modo da essere minimale, accattivante e pensato per avere un forte primo impatto visivo
+
+## Immagini
+![](./screenshots/00.png)
